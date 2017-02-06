@@ -1,0 +1,10 @@
+{
+    "m_title" : "HTTPGet",
+    "m_descr" : "Executes a HTTP Get to a source URL whenever a device changes state. %DEVICE% will be replaced with the device ID and %VALUE% will be replaced with the updated value",
+    "user_label": "Username",
+    "user_helper": "Leave blank for no username",
+    "password_label": "Password",
+    "password_helper": "Leave blank for no password",
+    "url_label": "URL to get",
+    "url_helper": "ie http://server:8080/set?device=%DEVICE%&state=%VALUE%"
+}

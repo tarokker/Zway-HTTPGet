@@ -1,6 +1,6 @@
 /*** HTTPGet Z-Way HA module ****************************************************
 
-Version: 1.0
+Version: 1.0.1
 (c) H Plato, 2017
 -----------------------------------------------------------------------------
 Author: H Plato <hplato@gmail.com>
@@ -76,25 +76,25 @@ HTTPGet.prototype.get_url = function (device, value) {
 	url = url.replace("%DEVICE%",device.id);
 	url = url.replace("%VALUE%",value);
 
-	//console.log(this.config.url+" : "+device.id+" : "+value+" : "+url);
-    console.log("Sending HTTPGet for device:"+device.id+" and value:"+value);
-    console.log("URL is :"+url);
+	console.log(this.config.url+" : "+device.id+" : "+value+" : "+url);
+
     var req = {
         url: url,
         async: true,
         success: function(response) {
+            console.log("Request was successful");
 			},
         error: function(response) {
             console.log("Can not make request: " + response.statusText); // don't add it to notifications, since it will fill all the notifcations on error
             } 
         };
         // With authorization
-        if (self.config.user !== "" && self.config.password !== "") {
-            req.auth = {
-                    login: self.config.user,
-                    password: self.config.password
-            };
-        }
+//        if (self.config.user !== undefined && self.config.password !== undefined) {
+//            req.auth = {
+//                    login: self.config.login,
+//                    password: self.config.password
+//            };
+//        }
     http.request(req);
 };
 

@@ -18,7 +18,7 @@
     "singleton": false,
     "version": 1.0,
     "repository": {
-        "source": "https://github.com/hplato/Zway-HTTPGet",
+        "source": "https://github.com/tarokker/Zway-HTTPGet",
         "type": "git"
     },
     "options": {
@@ -28,15 +28,10 @@
                 "helper": "__url_helper__",
                 "order": 1
             },
-            "user": {
-                "label": "__user_label__",
-                "helper": "__user_helper__",
+            "filter": {
+                "label": "__filter_label__",
+                "helper": "__filter_helper__",
                 "order": 2
-            },
-            "password": {
-                "label": "__password_label__",
-                "helper": "__password_helper__",
-                "order": 3
             }
         }
     },
@@ -48,11 +43,7 @@
                 "type": "string",
                 "required": true
             },
-            "user": {
-                "type": "string",
-                "required": false
-            },
-            "password": {
+            "filter": {
                 "type": "string",
                 "required": false
             }

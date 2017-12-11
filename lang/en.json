@@ -1,10 +1,12 @@
 {
-    "m_title" : "HTTPGet",
-    "m_descr" : "Executes a HTTP Get to a source URL whenever a device changes state. %DEVICE% will be replaced with the device ID and %VALUE% will be replaced with the updated value (MAIO)",
-    "user_label": "Username",
-    "user_helper": "Leave blank for no username",
-    "password_label": "Password",
-    "password_helper": "Leave blank for no password",
-    "url_label": "URL to get",
-    "url_helper": "ie http://server:8080/set?device=%DEVICE%&state=%VALUE%"
+    	"m_title" : "HTTPGet",
+    	"m_descr" : "Executes a HTTP Get to a source URL whenever a device changes state. %DEVICE% will be replaced with the device ID and %VALUE% will be replaced with the updated value (MAIO)",
+    	"user_label": "Username",
+    	"user_helper": "Leave blank for no username",
+	"filter_label": "Device filters ids (comma separated)",
+    	"password_label": "Password",
+    	"password_helper": "Leave blank for no password",
+    	"url_label": "URL to get",
+    	"url_helper": "ie http://server:8080/set?device=%DEVICE%&state=%VALUE%",
+	"filter_helper": "ZWayVDev_zway_40-1-37,ZWayVDev_zway_40-1-38"
 }

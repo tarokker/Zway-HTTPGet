@@ -67,7 +67,10 @@ HTTPGet.prototype.updateDevice = function (device) {
 		}
 	}
 
-	self.get_url(device, value);
+	// Maio: verifichiamo se il filtro id matcha
+	if ( typeof(this.config.filter) == 'undefined' || this.config.filter.length == 0 || (this.config.filter + ",").indexOf(device.id + ",") > -1 ) {
+		self.get_url(device, value);
+	}
 };
 
 HTTPGet.prototype.get_url = function (device, value) {

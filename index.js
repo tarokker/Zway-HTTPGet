@@ -38,13 +38,13 @@ HTTPGet.prototype.init = function (config) {
     var self = this;    
 
 	self.callback = _.bind(self.updateDevice, self);
-	self.controller.devices.on("modify:metrics:level", self.callback);
+	self.controller.devices.on("change:metrics:level", self.callback);
 };
 
 HTTPGet.prototype.stop = function () {
 	var self = this;
 
-	self.controller.devices.off("modify:metrics:level", self.callback);
+	self.controller.devices.off("change:metrics:level", self.callback);
 
     HTTPGet.super_.prototype.stop.call(this);
 };

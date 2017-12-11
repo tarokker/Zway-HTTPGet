@@ -1,6 +1,6 @@
 {
     "m_title" : "HTTPGet",
-    "m_descr" : "Executes a HTTP Get to a source URL whenever a device changes state. %DEVICE% will be replaced with the device ID and %VALUE% will be replaced with the updated value",
+    "m_descr" : "Executes a HTTP Get to a source URL whenever a device changes state. %DEVICE% will be replaced with the device ID and %VALUE% will be replaced with the updated value (MAIO)",
     "user_label": "Username",
     "user_helper": "Leave blank for no username",
     "password_label": "Password",

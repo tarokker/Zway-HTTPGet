@@ -23,14 +23,14 @@
     },
     "options": {
         "fields": {
-            "url": {
-                "label": "__url_label__",
-                "helper": "__url_helper__",
-                "order": 1
-            },
             "filter": {
                 "label": "__filter_label__",
                 "helper": "__filter_helper__",
+                "order": 1
+            },
+            "ports": {
+                "label": "__ports_label__",
+                "helper": "__ports_helper__",
                 "order": 2
             }
         }
@@ -39,13 +39,13 @@
         "type": "object",
         "required": false,
         "properties": {
-            "url": {
+            "filter": {
                 "type": "string",
                 "required": true
             },
-            "filter": {
+            "ports": {
                 "type": "string",
-                "required": false
+                "required": true
             }
         }
     }

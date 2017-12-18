@@ -34,7 +34,7 @@ HTTPGet.prototype.updateDevice = function (device) {
 	}
 
 	// Maio: verifichiamo se il filtro id matcha e cerca nell'array di port e filtri
-	//console.log("HTTPGET: notification id: " + device.id);
+	console.log("HTTPGET: notification id: " + device.id);
 	var filters = ( typeof(this.config.filter) == 'undefined' ? "" : this.config.filter ).split(",");
 	var ports = ( typeof(this.config.ports) == 'undefined' ? "" : this.config.ports ).split(",");
 	if ( filters.length == ports.length ) {
